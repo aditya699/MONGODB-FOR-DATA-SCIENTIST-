@@ -1,0 +1,91 @@
+<html>
+<head>
+	<title>MongoDB</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>	
+	<style>
+		body {
+			margin: 0 auto;
+			background-color: #f6f6f6;
+            font-size: 16px;
+            font-family: sans-serif;
+		}
+		h1 {
+			background-color: #1a73e8;
+			margin: 0;
+			color: #fff;
+			font-family: sans-serif;
+			letter-spacing: 2px;
+            font-size: 32px;
+            font-weight: bold;
+            padding: 1rem;
+			text-align: center;
+            text-shadow: 2px 2px #000;
+		}
+		section {
+			background-color: #fff;
+			padding: 1rem;
+			border-radius: 15px;
+			margin: 0 auto;
+			max-width: 650px;
+			margin-top: 1rem;
+			box-shadow: 0 2rem 2rem #c2c2c2;
+		}
+        p {
+            font-family: sans-serif;
+            box-shadow: 0 4px 8px #c2c2c2;
+            background-color: #f6f6f6;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 15px;
+        }
+        ul {
+            list-style: none;
+            margin-left: 0;
+        }
+        li::before {
+            content: "\f076";
+            font-family: FontAwesome;
+            color: #1a73e8;
+            font-weight: bold;
+            display: inline-block; 
+            width: 1em;
+            margin-left: -1em;
+        } 
+	</style>
+  <script>
+    $(document).ready(function(){
+      $('ul > li').each(function(){
+        $(this).hover(function(){
+          $(this).css('background-color','#18dafd');
+        }, function(){
+          $(this).css('background-color','#f6f6f6');
+          });
+      });
+    });
+  </script>
+</head>
+<body>
+	<h1>MongoDB</h1>
+	<section>
+		<h2>What is MongoDB?</h2>
+		<p>MongoDB is a document database that leverages the concept of key value pairs, and it does not have a fixed schema. It is part of a larger family of databases known as NoSQL.</p>
+		<h2>Why MongoDB?</h2>
+		<p>MongoDB offers many advantages over traditional databases, such as:
+			<ul>
+            <li>Speed - MongoDB can operations up to 50x faster than SQL based databases.</li>
+            <li>Scalability (Horizontal) - MongoDB allows for linear scaling as the data is spread across many machines. </li>
+            <li>High Flexibility - MongoDB supports various data types.</li>
+            <li>Sharding - MongoDB allows you to partition your data across multiple nodes.</li>
+            <li>Well documented - MongoDB has a comprehensive set of documentation.</li>
+            <li>A lot of unstructured data which cannot fit in relational databases - MongoDB can handle large amounts of unstructured data without compromising performance.</li>
+        	</ul>
+		</p>
+		<h2>Applications of MongoDB in Data Science?</h2>
+		<p>MongoDB can be used in many areas of data science such as real time customer analytics and IoT.</p>
+
+		<h2>What to Learn in MongoDB for Data Science?</h2>
+		<p>For data science, the key areas you should get familar with is the basics, pymongo and MQL.</p>
+	</section>
+</body>
+</html>
